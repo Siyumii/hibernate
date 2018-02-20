@@ -1,0 +1,29 @@
+/* Creating Role Table */
+
+CREATE TABLE ROLE (
+	ROLEID int NOT NULL,
+	TITLE varchar(50) NOT NULL,
+	PRIMARY KEY (ROLEID)
+
+);
+
+/*Creating Employee Table*/
+
+CREATE TABLE EMPLOYEE (
+	EMPLOYEEID int NOT NULL,
+	NAME varchar(50) NOT NULL,
+	ROLE_ID int,
+	PRIMARY KEY (EMPLOYEEID)
+	
+
+);
+
+/*Creating Task Table*/
+
+CREATE TABLE TASK (
+	TASKID int NOT NULL,
+	DESCRIPTION varchar(70) NOT NULL,
+	EMPLOYEE_ID int,
+	PRIMARY KEY (TASKID)
+	
+);
